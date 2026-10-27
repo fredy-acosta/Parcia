@@ -3,12 +3,14 @@
     "name": "mi-tienda",
     "slug": "mi-tienda",
     "version": "1.0.0",
+    "scheme": "mitienda",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
+    "plugins": ["expo-router"],
+    "ios": { "bundleIdentifier": "com.fredy.mitienda" },
+    "android": { "package": "com.fredy.mitienda" }
+  }
+},
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
@@ -20,6 +22,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-sqlite",
+      "expo-status-bar"
+    ]
   }
 }
